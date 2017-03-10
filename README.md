@@ -1,5 +1,5 @@
 # Thunderstrap
-This is a basic child theme for WordPress which depends on the [UnderStrap Theme Framework] (https://github.com/holger1411/understrap).
+This is a basic and lightweight child theme for WordPress, which depends on the [UnderStrap Theme Framework] (https://github.com/holger1411/understrap) and features support for Bootstrap 4.
 
 ## How Thunderstrap Works
 As a child theme, Thunderstrap offers a convenient way to override the functions and template files of Understap (it's parent theme).
@@ -9,7 +9,7 @@ However, unlike most child themes, Thunderstrap DOES NOT LOAD PARENT THEME CSS F
 Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package manager. After installing dependencies you can complile Sass files to modify and generate CSS files for ThunderStrap on the fly.
 
 ## Features
-- Simple starter theme without a zillion bells and whistles ready for modifying
+- Simple,  ready to modify, starter theme without a zillion bells and whistles
 - Supports Bootstrap 4's CSS and JavaScript (without you having to maintain it)
 - Font Awesome icons support
 - Woocommerce support
@@ -23,7 +23,9 @@ Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package mana
 5. Activate the ThunderStrap Child theme.
 
 ## Editing CSS
-Add your own CSS styles to `/sass/theme/_child_theme.scss` AND/OR import your own Sass files into `/sass/theme/child-theme.scss`.
+The simplest way to style ThunderStrap after installing it, is by going to:  `Appearance >> Customise >> Additional CSS` in your WordPress backend and adding your CSS there.
+
+If you are more technically inclined (which is what ThunderStrap was designed to support), you could add your own CSS styles to `/sass/theme/_child_theme.scss` AND/OR import your own Sass files into `/sass/theme/child-theme.scss`.
 
 To overwrite base variables (for Bootstrap or UnderStrap) just add your own values to: `/sass/theme/_child_theme_variables.scss`.
 
