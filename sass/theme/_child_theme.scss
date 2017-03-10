@@ -1,0 +1,9 @@
+#masthead { margin: 20px 0 25px 0; }
+
+.site-title.h2 { font-weight: 700; }
+
+@include media-breakpoint-down(xs) { 
+	#masthead {
+		text-align: center;
+	}
+ }
