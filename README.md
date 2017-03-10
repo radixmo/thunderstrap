@@ -4,7 +4,7 @@ This is a basic child theme for WordPress which depends on the [UnderStrap Theme
 ## How Thunderstrap Works
 As a child theme, Thunderstrap offers a convenient way to override the functions and template files of Understap (it's parent theme).
 
-However, unlike most child themes Thunderstrap DOES NOT LOAD PARENT THEME CSS FILE(S)!
+However, unlike most child themes, Thunderstrap DOES NOT LOAD PARENT THEME CSS FILE(S)!
 
 Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package manager. After installing dependencies you can complile Sass files to modify and generate CSS files for ThunderStrap on the fly.
 
