@@ -11,7 +11,7 @@ Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package mana
 ## Installation
 1. Go to "Appearance -> Themes" in your WordPress admin backend.
 2. Find and install UnderStrap (the parent theme). - 
-3. Download ThunderStrap from Github.
+3. Download [ThunderStrap from Github] (https://github.com/radixmo/thunderstrap/archive/child.zip).
 4. Upload the ThunderStrap theme via WordPress admin backend.
 5. Activate the ThunderStrap Child theme.
 
