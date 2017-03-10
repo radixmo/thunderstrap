@@ -16,11 +16,11 @@ Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package mana
 5. Activate the ThunderStrap Child theme.
 
 ## Editing
-Add your own CSS styles to /sass/theme/_child_theme.scss
-or import your own Sass files into /sass/theme/child-theme.scss
+Add your own CSS styles to `/sass/theme/_child_theme.scss`
+or import your own Sass files into `/sass/theme/child-theme.scss`.
 
 To overwrite base variables (for Bootstrap or UnderStrap) just add your own values to:
-/sass/theme/_child_theme_variables.scss
+`/sass/theme/_child_theme_variables.scss`.
 
 For example:
 The "$brand-primary" variable is used by both, Bootstrap and UnderStrap.
@@ -38,7 +38,7 @@ This leaves you with just one clean CSS file for browsers to load.
 
 ### Installing Dependencies
 - Make sure you have installed Node.js, Bower, and [Browser-Sync] (1) on your computer globally
-- Then open your terminal and browse to the location of your ThunderStrap copy
+- Then open your terminal and browse to the location of your copy of ThunderStrap
 - Run: 
 
 `$ npm install`
@@ -61,6 +61,8 @@ var browserSyncOptions = {
     notify: false
 };
 ```
-- Then run: `$ gulp watch-bs`
+- Then run: 
+
+`$ gulp watch-bs`
 
 [1] Visit [http://browsersync.io](http://browsersync.io) for more information on Browser Sync
