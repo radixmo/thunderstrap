@@ -31,11 +31,12 @@ and `/css/child-theme.css`.
 
 - This leaves you with just one clean CSS file for browsers to load.
 
-## Developing With NPM, Gulp, SASS and Browser Sync
+## Developing with NPM, Gulp, SASS and Browser Sync
 
 ### Installing Dependencies
-- Make sure you have installed Node.js, Bower, and [Browser-Sync] (1) on your computer globally
-- Then open your terminal and browse to the location of your copy of ThunderStrap
+- Make sure you have installed Node.js, Bower, and Browser-Sync [1] on your computer globally
+- Open your terminal
+- Browse to the location of your copy of ThunderStrap
 - Run: 
 
 `$ npm install`
@@ -49,7 +50,9 @@ and `/css/child-theme.css`.
 
 `$ gulp watch`
 
-Or, to run with Browser-Sync:
+OR
+
+- To work and view changes with Browser-Sync:
 
 - First change the browser-sync options to reflect your environment in the file `/gulpfile.js` in the beginning of the file:
 ```javascript
