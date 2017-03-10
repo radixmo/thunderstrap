@@ -1,10 +1,10 @@
 # Thunderstrap
-This is a basic child theme for WordPress which depends on the [UnderStrap Theme Framework] (https://github.com/holger1411/understrap)
+This is a basic child theme for WordPress which depends on the [UnderStrap Theme Framework] (https://github.com/holger1411/understrap).
 
 ## How Thunderstrap Works
 As a child theme, Thunderstrap offers a convenient way to override the functions and template files of Understap (it's parent theme).
 
-However, unlike most child themes PLEASE NOTE: IT DOES NOT LOAD PARENT THEME CSS FILE(S)!
+However, unlike most child themes Thunderstrap DOES NOT LOAD PARENT THEME CSS FILE(S)!
 
 Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package manager. After installing dependencies you can complile Sass files to modify and generate CSS files for ThunderStrap on the fly.
 
@@ -15,22 +15,19 @@ Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package mana
 4. Upload the ThunderStrap theme via WordPress admin backend.
 5. Activate the ThunderStrap Child theme.
 
-## Editing
-Add your own CSS styles to `/sass/theme/_child_theme.scss`
-or import your own Sass files into `/sass/theme/child-theme.scss`.
+## Editing CSS
+Add your own CSS styles to `/sass/theme/_child_theme.scss` AND/OR import your own Sass files into `/sass/theme/child-theme.scss`.
 
-To overwrite base variables (for Bootstrap or UnderStrap) just add your own values to:
-`/sass/theme/_child_theme_variables.scss`.
+To overwrite base variables (for Bootstrap or UnderStrap) just add your own values to: `/sass/theme/_child_theme_variables.scss`.
 
 For example:
+
 The "$brand-primary" variable is used by both, Bootstrap and UnderStrap.
-You modify the color in `/sass/theme/_child_theme_variables.scss` to overwrite it:
-$brand-primary: #ff6600;
-Doing so will automatically change all elements who use this variable.
-It will be outputted into:
-`/css/child-theme.min.css`
-and
-`/css/child-theme.css`
+
+You modify the color in `/sass/theme/_child_theme_variables.scss`.For examlple you could overwrite the prmary brand colour with: `$brand-primary: #ff6600;`.
+
+Doing so will automatically change all elements that use this variable. It will be outputted into: `/css/child-theme.min.css`
+and `/css/child-theme.css`.
 
 This leaves you with just one clean CSS file for browsers to load.
 
