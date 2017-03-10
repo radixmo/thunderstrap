@@ -15,7 +15,7 @@ Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package mana
 - Woocommerce support
 - Contact Form 7 support
 
-See [screenshot] (https://github.com/radixmo/thunderstrap/blob/child/screenshot.png).
+![screenshot] (https://github.com/radixmo/thunderstrap/blob/child/screenshot.png)
 
 ## Installation
 1. Go to "Appearance -> Themes" in your WordPress admin backend.
