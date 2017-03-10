@@ -22,14 +22,14 @@ To overwrite base variables (for Bootstrap or UnderStrap) just add your own valu
 
 For example:
 
-The "$brand-primary" variable is used by both, Bootstrap and UnderStrap.
+- The "$brand-primary" variable is used by both, Bootstrap and UnderStrap.
 
-You modify the color in `/sass/theme/_child_theme_variables.scss`.For examlple you could overwrite the prmary brand colour with: `$brand-primary: #ff6600;`.
+- You modify the color in `/sass/theme/_child_theme_variables.scss`.For examlple you could overwrite the prmary brand colour with: `$brand-primary: #ff6600;`.
 
-Doing so will automatically change all elements that use this variable. It will be outputted into: `/css/child-theme.min.css`
+- Doing so will automatically change all elements that use this variable. It will be outputted into: `/css/child-theme.min.css`
 and `/css/child-theme.css`.
 
-This leaves you with just one clean CSS file for browsers to load.
+- This leaves you with just one clean CSS file for browsers to load.
 
 ## Developing With NPM, Gulp, SASS and Browser Sync
 
