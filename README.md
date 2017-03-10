@@ -8,6 +8,13 @@ However, unlike most child themes, Thunderstrap DOES NOT LOAD PARENT THEME CSS F
 
 Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package manager. After installing dependencies you can complile Sass files to modify and generate CSS files for ThunderStrap on the fly.
 
+## Features
+- Simple starter theme without a zillion bells and whistles ready for modifying
+- Supports Bootstrap 4's CSS and JavaScript (without you having to maintain it)
+- Font Awesome icons support
+- Woocommerce support
+- Contact Form 7 support
+
 ## Installation
 1. Go to "Appearance -> Themes" in your WordPress admin backend.
 2. Find and install UnderStrap (the parent theme). - 
