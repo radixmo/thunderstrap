@@ -1,64 +1,66 @@
-# understrap-child
-Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap
+# Thunderstrap
+This is a basic child theme for WordPress which depends on the [UnderStrap Theme Framework] (https://github.com/holger1411/understrap)
 
-## How it works
-It shares with the parent theme all PHP files and adds its own functions.php on top of the UnderStrap parent themes functions.php.
+## How Thunderstrap Works
+As a child theme, Thunderstrap offers a convenient way to override the functions and template files of Understap (it's parent theme).
 
-IT DID NOT LOAD THE PARENT THEMES CSS FILE(S)!
-Instead it uses the UnderStrap Parent Theme as dependency via Bower and compiles its own CSS file from it.
+However, unlike most child themes PLEASE NOTE: IT DOES NOT LOAD PARENT THEME CSS FILE(S)!
 
-Uses the Enqueue method the load and sort the CSS file the right way instead of the old @import method.
+Instead, Thunderstrap uses UnderStrap as a dependency via the Bower package manager. After installing dependencies you can complile Sass files to modify and generate CSS files for ThunderStrap on the fly.
 
 ## Installation
-1. Install the parent theme UnderStrap first: https://github.com/holger1411/understrap
-- IMPORTANT: If you download it from GitHub make sure you rename the "understrap-master.zip" file just to "understrap.zip" or you might have problems using this child themes !!
-
-2. Just upload the understrap-child folder to your wp-content/themes directory
-3. Go into your WP admin backend 
-4. Go to "Appearance -> Themes"
-5. Activate the UnderStrap Child theme
+1. Go to "Appearance -> Themes" in your WordPress admin backend.
+2. Find and install UnderStrap (the parent theme). - 
+3. Download ThunderStrap from Github.
+4. Upload the ThunderStrap theme via WordPress admin backend.
+5. Activate the ThunderStrap Child theme.
 
 ## Editing
 Add your own CSS styles to /sass/theme/_child_theme.scss
-or import you own files into /sass/theme/understrap-child.scss
+or import your own Sass files into /sass/theme/child-theme.scss
 
-To overwrite Bootstrap or UnderStraps base variables just add your own value to:
+To overwrite base variables (for Bootstrap or UnderStrap) just add your own values to:
 /sass/theme/_child_theme_variables.scss
 
 For example:
-the "$brand-primary" variable is used by both, Bootstrap and UnderStrap.
-Add your own color like:
+The "$brand-primary" variable is used by both, Bootstrap and UnderStrap.
+You modify the color in `/sass/theme/_child_theme_variables.scss` to overwrite it:
 $brand-primary: #ff6600;
-in /sass/theme/_child_theme_variables.scss to overwrite it.
-That will change automatically all elements who use this variable.
+Doing so will automatically change all elements who use this variable.
 It will be outputted into:
-/css/understrap-child.min.css
+`/css/child-theme.min.css`
 and
-/css/understrap-child.css
+`/css/child-theme.css`
 
-So you have one clean CSS file at the end and just one request.
+This leaves you with just one clean CSS file for browsers to load.
 
 ## Developing With NPM, Gulp, SASS and Browser Sync
 
 ### Installing Dependencies
-- Make sure you have installed Node.js, Bower, and Browser-Sync [1] on your computer globally
-- Then open your terminal and browse to the location of your UnderStrap copy
-- Run: `$ npm install` then: `$ gulp copy-assets`
+- Make sure you have installed Node.js, Bower, and [Browser-Sync] (1) on your computer globally
+- Then open your terminal and browse to the location of your ThunderStrap copy
+- Run: 
+
+`$ npm install`
+
+- Then run: 
+
+`$ gulp copy-assets`
 
 ### Running
-To work and compile your Sass files on the fly start:
+- To work and compile your Sass files on the fly start, run:
 
-- `$ gulp watch`
+`$ gulp watch`
 
 Or, to run with Browser-Sync:
 
 - First change the browser-sync options to reflect your environment in the file `/gulpfile.js` in the beginning of the file:
 ```javascript
 var browserSyncOptions = {
-    proxy: "localhost/theme_test/", // <----- CHANGE HERE
+    proxy: "localhost/theme_test/", // <----- CHANGE PATH TO WORDPRESS INSTALL HERE
     notify: false
 };
 ```
-- then run: `$ gulp watch-bs`
+- Then run: `$ gulp watch-bs`
 
 [1] Visit [http://browsersync.io](http://browsersync.io) for more information on Browser Sync
